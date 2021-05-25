@@ -1,0 +1,57 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - JCore (2.6.2)
+  - JPush (3.5.2):
+    - JCore (< 3.0.0, >= 2.0.0)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
+  - TZImagePickerController (3.6.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - JCore
+  - JPush
+  - Masonry
+  - MBProgressHUD
+  - SDWebImage
+  - TZImagePickerController
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - JCore
+    - JPush
+    - Masonry
+    - MBProgressHUD
+    - SDWebImage
+    - TZImagePickerController
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  JCore: 0cb4fc5892bc97af4f27283875369ead3eaa3067
+  JPush: 95b78ca7b3dd56455b1de6b8488be350ea942a41
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  TZImagePickerController: a37d7eec87c54436e896a67947033ad2178d498b
+
+PODFILE CHECKSUM: 1f1b9a6fe6e71c4d55c356044ef1fa0b4c74e2e3
+
+COCOAPODS: 1.10.1

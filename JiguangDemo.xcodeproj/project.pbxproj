@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2951B35F8ED06EB76E17D319 /* Pods_JiguangDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BEA2FCE022649925ACD6796 /* Pods_JiguangDemo.framework */; };
 		5A38206F25F376DB001C8852 /* JVerification@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A38200E25F376DB001C8852 /* JVerification@3x.png */; };
 		5A38207025F376DB001C8852 /* JBack@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A38200F25F376DB001C8852 /* JBack@3x.png */; };
 		5A38207125F376DB001C8852 /* JPush@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A38201025F376DB001C8852 /* JPush@3x.png */; };
@@ -119,6 +120,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CFB37C92BDA5D24A1D8190B /* Pods-JiguangDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiguangDemo.release.xcconfig"; path = "Target Support Files/Pods-JiguangDemo/Pods-JiguangDemo.release.xcconfig"; sourceTree = "<group>"; };
+		3BEA2FCE022649925ACD6796 /* Pods_JiguangDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JiguangDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A381F8B25F234E1001C8852 /* JiguangDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JiguangDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		5A38200E25F376DB001C8852 /* JVerification@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JVerification@3x.png"; sourceTree = "<group>"; };
 		5A38200F25F376DB001C8852 /* JBack@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JBack@3x.png"; sourceTree = "<group>"; };
@@ -249,6 +252,7 @@
 		5A90F2E824FE2D4A00F775EF /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		5A90F2EC24FE2DCA00F775EF /* JiguangDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JiguangDemo.entitlements; sourceTree = "<group>"; };
 		5A90F30924FE429700F775EF /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallKit.framework; path = System/Library/Frameworks/CallKit.framework; sourceTree = SDKROOT; };
+		5E2E030E82C8949791E00459 /* Pods-JiguangDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiguangDemo.debug.xcconfig"; path = "Target Support Files/Pods-JiguangDemo/Pods-JiguangDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +262,7 @@
 			files = (
 				5A90F2EB24FE2D7600F775EF /* libresolv.tbd in Frameworks */,
 				5A90F30A24FE429700F775EF /* CallKit.framework in Frameworks */,
+				2951B35F8ED06EB76E17D319 /* Pods_JiguangDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +473,7 @@
 				5A58018C24F8AEF500F0E090 /* JiguangDemo */,
 				5A58018B24F8AEF500F0E090 /* Products */,
 				5A90F2E724FE2D4900F775EF /* Frameworks */,
+				74BDC949F3CD9AFB1D89CEF8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -508,8 +514,19 @@
 			children = (
 				5A90F30924FE429700F775EF /* CallKit.framework */,
 				5A90F2E824FE2D4A00F775EF /* libresolv.tbd */,
+				3BEA2FCE022649925ACD6796 /* Pods_JiguangDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74BDC949F3CD9AFB1D89CEF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E2E030E82C8949791E00459 /* Pods-JiguangDemo.debug.xcconfig */,
+				0CFB37C92BDA5D24A1D8190B /* Pods-JiguangDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -519,9 +536,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A5801A324F8AEF800F0E090 /* Build configuration list for PBXNativeTarget "JiguangDemo" */;
 			buildPhases = (
+				A86AB2913BA317551CC2F754 /* [CP] Check Pods Manifest.lock */,
 				5A58018624F8AEF500F0E090 /* Sources */,
 				5A58018724F8AEF500F0E090 /* Frameworks */,
 				5A58018824F8AEF500F0E090 /* Resources */,
+				1BC9A1E85FBAFA49CCC682F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -663,6 +682,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BC9A1E85FBAFA49CCC682F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JiguangDemo/Pods-JiguangDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JiguangDemo/Pods-JiguangDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JiguangDemo/Pods-JiguangDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A86AB2913BA317551CC2F754 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JiguangDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5A58018624F8AEF500F0E090 /* Sources */ = {
@@ -825,6 +886,7 @@
 		};
 		5A5801A424F8AEF800F0E090 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E2E030E82C8949791E00459 /* Pods-JiguangDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -857,6 +919,7 @@
 		};
 		5A5801A524F8AEF800F0E090 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CFB37C92BDA5D24A1D8190B /* Pods-JiguangDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
